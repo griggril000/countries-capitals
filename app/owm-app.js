@@ -35,9 +35,15 @@ angular.module('OWMApp', ['ngRoute', 'ngAnimate'])
             $rootScope.isLoading = true;
         });
         $rootScope.$on('$routeChangeSuccess', function() {
+<<<<<<< HEAD
           $timeout(function() {
             $rootScope.isLoading = false;
           }, 1000);
+=======
+            $timeout(function() {
+                $rootScope.isLoading = false;
+            }, 1000);
+>>>>>>> animation
         });
     })
     .controller('HomeCtrl', function($scope) {
