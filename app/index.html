@@ -3,20 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <title>Countries and Capitals</title>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
     <link rel="stylesheet" type="text/css" href="./main.css">
 </head>
 <body>
+    <div class="container">
+        <div class="pageHeader">
+        	<a href="#/">Homepage</a>
+            |
+        	<a href="#/countries">Countries</a>
+        </div>
 
-	<a href="#/">Homepage</a>
-	<a href="#/country/Peru">Peru</a>
-    <a href="#/country/America">America</a>
-    <a href="#/country/Venezuela">Venezuela</a>
+        
+        <div class="animate-view-container">
+            <div ng-view class="animate-view"></div>
+        </div>
+
+    </div>
     
-    <div class="animate-view-container">
-    	<div ng-view class="animate-view"></div>
-	</div>
 
     <script type="text/javascript" src="./bower_components/angular/angular.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="./bower_components/angular-route/angular-route.js"></script>
     <script type="text/javascript" src="./bower_components/angular-animate/angular-animate.js"></script>
     <script type="text/javascript" src="./cc-app.js"></script>

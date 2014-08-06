@@ -20,6 +20,10 @@ angular.module('CCApp', ['ngRoute', 'ngAnimate'])
                 }
             }
         })
+        .when('/countries', {
+            templateUrl : './countries.html',
+            controller : 'CountriesCtrl'
+        })
         .when('/error', {
 		    template : '<p>Error Page Not Found</p>'
 		})
@@ -41,6 +45,9 @@ angular.module('CCApp', ['ngRoute', 'ngAnimate'])
         });
     })
     .controller('HomeCtrl', function($scope) {
+        //empty for now
+    })
+    .controller('CountriesCtrl', function($scope) {
         //empty for now
     })
     .controller('CountryCtrl', function($scope, country) {
